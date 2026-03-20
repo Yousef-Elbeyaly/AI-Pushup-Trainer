@@ -35,8 +35,8 @@ def process_folder(folder_path, label):
 
                 base_x = x_vals[11]
                 base_y = y_vals[11]
-                scale = max(max(x_vals) - min(x_vals), max(y_vals) - min(y_vals))                # base_x = results.pose_landmarks.landmark[0].x
-                # base_y = results.pose_landmarks.landmark[0].y
+                scale = max(max(x_vals) - min(x_vals), max(y_vals) - min(y_vals))
+
                 if scale == 0 : scale = 1
                 for i in important_landmarks:
                     lm = results.pose_landmarks.landmark[i]
